@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TaskFlow - Home</title>
+  <title>Task App</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,12 +18,17 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Organize Your Life Smartly</h1>
-  <p>Modern task manager for daily productivity</p>
+<section class="app">
+  <h2>📋 Task Manager</h2>
+
+  <input id="taskInput" placeholder="Write task">
+  <button onclick="addTask()">Add</button>
+
+  <ul id="taskList"></ul>
 </section>
 
 <footer>© 2026 TaskFlow</footer>
 
+<script src="script.js"></script>
 </body>
 </html>

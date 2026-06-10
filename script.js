@@ -7,9 +7,7 @@ function render() {
   tasks.forEach((t, i) => {
     list.innerHTML += `
       <li>
-        <span onclick="toggle(${i})" style="cursor:pointer; ${t.done ? 'text-decoration:line-through' : ''}">
-          ${t.text}
-        </span>
+        ${t}
         <button onclick="removeTask(${i})">X</button>
       </li>
     `;
@@ -22,18 +20,13 @@ function addTask() {
   const input = document.getElementById("taskInput");
   if (!input.value.trim()) return;
 
-  tasks.push({ text: input.value, done: false });
+  tasks.push(input.value);
   input.value = "";
   render();
 }
 
 function removeTask(i) {
   tasks.splice(i, 1);
-  render();
-}
-
-function toggle(i) {
-  tasks[i].done = !tasks[i].done;
   render();
 }
 
