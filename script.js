@@ -10,7 +10,7 @@ function render() {
         <span onclick="toggle(${i})" style="cursor:pointer; ${t.done ? 'text-decoration:line-through' : ''}">
           ${t.text}
         </span>
-        <button onclick="removeTask(${i})">❌</button>
+        <button onclick="removeTask(${i})">X</button>
       </li>
     `;
   });

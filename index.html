@@ -7,18 +7,38 @@
 </head>
 <body>
 
-<div class="overlay"></div>
+<!-- HEADER -->
+<header>
+  <div class="logo">🧠 TaskFlow</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#app">App</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
 
-<div class="container">
-  <h1>📋 Digital Task Manager</h1>
+<!-- HERO -->
+<section class="hero">
+  <h1>Organize Your Life Smartly</h1>
+  <p>Simple, fast and modern task manager</p>
+</section>
+
+<!-- APP -->
+<section id="app" class="app-box">
+  <h2>📋 Your Tasks</h2>
 
   <div class="input-box">
-    <input id="taskInput" placeholder="Write your task..." />
-    <button onclick="addTask()">➕ Add</button>
+    <input id="taskInput" placeholder="Write task..." />
+    <button onclick="addTask()">Add</button>
   </div>
 
   <ul id="taskList"></ul>
-</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 TaskFlow. All rights reserved.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
