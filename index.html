@@ -2,28 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TaskFlow - Home</title>
+  <title>TaskNova - Digital Task Manager</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <div class="logo">🧠 TaskFlow</div>
+  <div class="logo">✨ TaskNova</div>
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="features.html">Features</a>
-    <a href="app.html">App</a>
-    <a href="contact.html">Contact</a>
+    <a href="#">Home</a>
+    <a href="#app">App</a>
+    <a href="#about">About</a>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Organize Your Life Smartly</h1>
-  <p>Modern task manager for daily productivity</p>
+  <h1>Manage Tasks Like a Pro</h1>
+  <p>Fast, beautiful and modern productivity tool</p>
+  <button class="btn">Get Started</button>
 </section>
 
-<footer>© 2026 TaskFlow</footer>
+<section id="app" class="card">
+  <h2>📋 Your Workspace</h2>
 
+  <div class="input-box">
+    <input id="taskInput" placeholder="Enter your task..." />
+    <button onclick="addTask()">Add</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</section>
+
+<footer>
+  <p>© 2026 TaskNova. Built for productivity 🚀</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
