@@ -10,7 +10,7 @@ function render() {
         <span onclick="toggle(${i})" style="cursor:pointer; ${t.done ? 'text-decoration:line-through' : ''}">
           ${t.text}
         </span>
-        <button onclick="removeTask(${i})">X</button>
+        <button onclick="removeTask(${i})">❌</button>
       </li>
     `;
   });
@@ -20,7 +20,7 @@ function render() {
 
 function addTask() {
   const input = document.getElementById("taskInput");
-  if (input.value.trim() === "") return;
+  if (!input.value.trim()) return;
 
   tasks.push({ text: input.value, done: false });
   input.value = "";

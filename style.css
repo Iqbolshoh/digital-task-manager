@@ -1,18 +1,35 @@
 body {
+  margin: 0;
   font-family: Arial;
-  background: #0f172a;
-  color: white;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
+  background: url("https://images.unsplash.com/photo-1557683316-973673baf926") no-repeat center/cover;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
 }
 
 .container {
-  width: 350px;
-  background: #1e293b;
+  position: relative;
+  width: 380px;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
+
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+h1 {
+  text-align: center;
 }
 
 .input-box {
@@ -22,18 +39,25 @@ body {
 
 input {
   flex: 1;
-  padding: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
 }
 
 button {
-  padding: 8px 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  background: #00ffcc;
+  font-weight: bold;
 }
 
 li {
   margin-top: 10px;
-  background: #334155;
-  padding: 8px;
+  padding: 10px;
+  background: rgba(255,255,255,0.15);
   display: flex;
   justify-content: space-between;
+  border-radius: 8px;
 }
